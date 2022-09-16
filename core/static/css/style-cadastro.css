@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,400;1,500&display=swap');
+
+* {
+    margin: 0px;
+}
+
+
+body {
+    background: #CCA460;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+img {
+    max-width: 18%;
+}
+
+header {
+    background: #745725;
+    grid-column: 1 / 4;
+}
+
+.introducao {
+    box-sizing: border-box;
+    display: grid;
+    justify-content: center;
+}
+
+header span {
+    padding: 8px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFE9C4;
+    font-weight: 350;
+    font-size: 32px;
+    align-items: center;
+}
+
+main {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    place-content: center;
+    background: #FFFBF5;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 8px;
+    box-sizing: border-box;
+    width: 600px;
+}
+.formulario {
+    display: grid;
+    justify-content: center;
+    gap: 8px;
+}
+
+.usuario_dados {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6px;
+    align-items: start;
+}
+
+label {
+    color: #464237;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+input {
+    border: 1px solid #D2CEC5;
+    width: 200px;
+    height: 28px;
+    border-radius: 5px;
+    grid-row-start: 2;
+    outline: 0;
+    font-size: 20px;
+    color: #464237;
+}
+
+#nome, #email, #senha, #endereco {
+    height: 28px;
+    width: 500px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+.termos{
+    display: grid;
+}
+
+.agrupado {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.termos label {
+    grid-column: 2;
+    display: inline-block;
+    font-size: 20;
+}
+
+.termos input {
+    grid-row: 1;
+    grid-column: 1;
+    height: 26px;
+    width: 26px;
+    border-color: 1px solid #D2CEC5;
+    gap: 22px;
+    border-radius: 5px;
+}
+
+button {
+    background: #745725;
+    color: #FFE9C4;
+    border: none;
+    padding: 8px 32px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #9B7431;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="core/static/css/style-cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <div class="introducao">
+            <span>CADASTRO</span>
+        </div>
+    </header>
+    <main>
+        <form action="/pagina-processa-dados-do-form" method="post">
+            <div class="formulario">
+                <div class="usuario_dados">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="usuario_nome" />
+                </div>
+                <div class="usuario_dados">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="usuario_email" />
+                </div>
+                <div class="usuario_dados">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="usuario_senha">
+                </div>
+
+                <div class="agrupado">
+                    <div class="usuario_dados">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="usuario_telefone">
+                    </div>
+                    <div class="usuario_dados">
+                        <label for="data_de_nascimento">Data de Nascimento</label>
+                        <input type="date" id="data_de_nascimento" name="usuario_data_de_nascimento">
+                    </div>
+                </div>
+                <div class="usuario_dados">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" name="usuario_endereco">
+                </div>
+                <div class="usuario_dados">
+                    <label for="numero_da_casa">Número</label>
+                    <input type="number" id="numero_da_casa" name="usuario_endereco_numero">
+                </div>
+                <div class="termos">
+                    <label for="termos_e_condicoes">Concordo com os Termos e Condições</label>
+                    <input type="checkbox" id="termos_e_condicoes" name="aceitar_termos">
+                </div>
+                <div class="button">
+                    <button type="submit" method="POST">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
