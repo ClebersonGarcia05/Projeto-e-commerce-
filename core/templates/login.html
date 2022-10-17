@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/style-login.css'%}">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <img src="{% static '/img/Logo.svg' %}" alt="">
+        <a href="{% url 'index' %}">HOME</a>
+    </header>
+    <main>
+        <img src="{% static '/img/Logo.png' %}" alt="Logo Café Gourmert" width="404px">
+        <form action="login.html" method="GET" autocomplete="off">
+            {% csrf_token %}
+            <div class="formulario">
+                <div class="campos">
+                    <label for="username">Email</label>
+                    <input type="email" name="email" id="email" placeholder="exemplo@gamail.com">
+                </div>
+                <div class="campos">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="senha">
+                </div>
+                <button type="submit">Entrar</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

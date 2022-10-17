@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/style-item_page.css'%}">
+    <title>(Nome do produto)</title>
+</head>
+<body>
+    <header>
+        <img src="{% static '/img/Logo.svg'%}" alt="Logo">
+        <a href="{% url 'index' %}">HOME</a>
+    </header>
+    <main>
+        <div class="item">
+            <div class="representacao">
+                <img src="{% static '/img/imagem produto.png'%}" alt="produto_imagem">
+                <div class="descricao">
+                    <h2>Ingredientes</h2>
+                    <div class="tempo_preparo">
+                        <img src="{% static '/img/Vector.svg' %} " alt="tempo_preparo">
+                        <span>45 m</span>
+                    </div>
+                    <p>Clara de ovo, açucar, farinha de castanha de caju, manteiga, agua,essência de amóra, mel e geléia de amóra.</p>
+                </div>
+            </div>
+            <div class="adicionar_pedido">
+                <h3>Macaroon de amóra silvestre 12 Unidades</h3>
+                <div class="relevancia">
+                    <div class="estrelas">
+                        <img src="{% static '/img/Star 1.svg'%}" alt="estrelas">
+                        <img src="{% static '/img/Star 1.svg'%}" alt="estrelas">
+                        <img src="{% static '/img/Star 1.svg'%}" alt="estrelas">
+                        <img src="{% static '/img/Star 1.svg'%}" alt="estrelas">
+                        <img src="{% static '/img/Star 1.svg'%}" alt="estrelas">
+                    </div>
+                    <div class="pedidos">
+                        <span>0.0</span>
+                        <span>|</span>
+                        <span>148 pedidos</span>
+                    </div>
+                    <span id="valor">R$ 43,90</span>
+                </div>
+                <div class="editar_quantidade">
+                    <span class="quantidade">Quantidade</span>
+                    <div class="botao">
+                        <img src="{% static '/img/+.png'%}" alt="">
+                            <span>1</span>
+                        <img src="{% static '/img/-.png'%}" alt="">
+                    </div>
+                </div>
+                <div class="comprar">
+                    <button id="add_carrinho">Adicione ao carrinho</button>
+                    <button id="comprar_agora">Comprar agora</button>
+                </div>
+            </div>
+        </div>
+        <div class="avaliacao">
+            <h3>Avaliações</h3>
+            <p>Camila</p>
+            <div class="avaliacao_usuario">
+                <div class="estrelas">
+                    <img src="{% static '/img/Star 1.svg'%}" alt="estrelas">
+                    <img src="{% static '/img/Star 1.svg'%}" alt="estrelas">
+                    <img src="{% static '/img/Star 1.svg'%}" alt="estrelas">
+                    <img src="{% static '/img/Star 1.svg'%}" alt="estrelas">
+                    <img src="{% static '/img/Star 1.svg'%}" alt="estrelas">
+                </div>
+                <span>0.0</span>
+            </div>
+            <p>O produto tem um sabore refinado. O sabor da geléia de amóras presente traz uma refrescancia sem igual. Melhor Macaroon que ja provei!</p>
+        </div>
+    </main>
+    <footer>
+        <span>Todos os direitos Reservados</span>
+        <span>Saiba Mais</span>
+    </footer>
+</body>
+</html>

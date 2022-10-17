@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/style-carrinho.css' %}">
+    <title>Carrinho</title>
+</head>
+<body>
+    <header>
+        <img src="{% static '/img/Logo.svg' %}" alt="">
+        <a href="{% url 'index' %}">HOME</a>
+    </header>
+    <main>
+        <div class="total_itens">
+            <h2>Carrinho de Compras (1)</h2>
+            <div class="selecionar_todos">
+                <span>Selecionar todos os itens</span>
+                <input type="radio">
+            </div>
+        </div>
+        <div class="menu_itens">
+            <input type="radio" name="Selecionar_item" id="item_escolhido">
+            <img src="{% static '/img/delete_FILL0_wght400_GRAD0_opsz48 1.png'%}" id="remover" alt="remover item">
+            <div class="itens_carrinho">
+                <img src="{% static '../images/image 1.png' %}" alt="item selecionado">
+                <p>Macaroon de amóra silvestre 12 Unidades</p>
+                <span id="valor">R$ 43,90</span>
+                <div class="editar_quantidade">
+                    <span class="quantidade">Quantidade</span>
+                    <div class="botao">
+                        <img src="{% static '/img/+.png'%}" alt="">
+                            <span>2</span>
+                        <img src="{% static '/img/-.png'%}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside>
+            <div class="resumo">
+                <h2>Total</h2>
+                <span>Total</span>
+                <span>R$ 43,90</span>
+                <button>Continuar (1)</button>
+            </div>
+        </aside>
+        <div class="imagem">
+            <img src="{% static '/img/Add tasks-pana 1.png'%}" alt="" height="300px" width="300px">
+        </div> 
+    </main>
+    <footer>
+        <span>Todos os direitos Reservados</span>
+        <span>Saiba Mais</span>
+    </footer>
+</body>
+</html>

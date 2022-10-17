@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0px;
+}
+
+:root {
+    --marrom-escuro: #745725;
+    --marrom: #CCA460;
+    --branco-amarronzado: #FFF0D6;
+    --branco: #FFFBF5;
+    --cinza: #F9F8F6;
+    --cinza-claro: #D2CEC5;
+    --cinza-escuro: #464237;
+    --branco-meio-escuro: #E0DBD1;
+
+
+    --roboto: 'Roboto', sans-serif;
+
+}
+
+body {
+    height: 100vh;
+    background: var(--marrom);
+}
+
+header {
+    background: var(--marrom-escuro);
+    display: flex;
+    gap: 64px;
+    grid-column: 1 / 4;
+}
+
+header a {
+    font-family: var(--roboto);
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 32px;
+    font-weight: 300;
+    transition: 0.25s;
+    align-self: center;
+}
+
+header a:hover {
+    text-decoration: underline;
+    font-size: 34px;
+    color: var(--branco);
+}
+
+img {
+    max-width: 100%;
+    justify-self: center;
+}
+
+main {
+    margin: 32px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: end;
+    place-items: start;
+    justify-items: center;
+}
+
+.formulario {
+    background-color: var(--branco);
+    border-radius: 16px;
+    height: 256px;
+    padding: 16px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 32px;
+    grid-column: 2;
+}
+
+.campos {
+    display: grid;
+    gap: 8px;
+}
+
+.campos label {
+    font-size: 22px;
+    font-family: var(--roboto);
+    color: var(--cinza-escuro);
+    font-weight: bold;
+
+}
+
+.campos input {
+    height: 32px;
+    width: 100%;
+
+    border: 1px solid var(--cinza-claro);
+    background: var(--cinza);
+    border-radius: 6px;
+    font-family: var(--roboto);
+    font-size: 24px;
+    color: var(--cinza-escuro);
+    outline: none;
+    transition: 0.2s
+}
+
+.campos input:hover {
+    background: var(--branco-meio-escuro);
+    border: 1px solid var(--cinza-claro);
+}
+
+.formulario button {
+    border: none;
+    color: var(--branco-amarronzado);
+    background: var(--marrom);
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 28px;
+    width: 8em;
+    cursor: pointer;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.formulario button:hover{
+    box-shadow: 0 0 40px 40px var(--marrom-escuro) inset;
+}
+
